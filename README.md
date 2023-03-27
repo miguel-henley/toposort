@@ -9,7 +9,8 @@ Ha duas implementações.
 2) Kahn - implementada pela Unit uTopoSortKahn.pas
 
 A implementação por DFS (uTopoSort.pas) utiliza recursão - o que pode acarretar em erros de Stack Overflow se o grafo conter uma quantidade de nós muito grande.
-A implementação utilizando o algoritmo de Kahn não utiliza recursão e sim uma estrutura de dados de Fila (TQueue).
+<br><br>
+A implementação utilizando o algoritmo de Kahn (uTopoSortKahn.pas) não utiliza recursão e sim uma estrutura de dados de Fila (TQueue).
 
 O uso é muito simples. Imaginando um grafo como o abaixo:
 
@@ -24,7 +25,7 @@ var
 begin
   lTopo := TTopoSortKahn.Create;
 
-  // Primeiro os nós devem ser adicionados
+  // Primeiro os nós devem ser adicionados:
   lTopo.AddNode('5', nil);
   lTopo.AddNode('7', nil);
   lTopo.AddNode('3', nil);
@@ -46,10 +47,10 @@ begin
   lTopo.AddDependency('11', '10');
   lTopo.AddDependency('8', '9');
 
-  // Finalmente o metodo Sort deve ser chamado para realizar a ordenação topológica
+  // Finalmente o metodo Sort deve ser chamado para realizar a ordenação topológica:
   L := lTopo.Sort;   
     
   // **Obteremos como resultado a seguinte sequencia: 9, 10, 2, 8, 11, 3, 7, 5**
 
-  // lTopo.Free
+  // lTopo.Free;
 ```
