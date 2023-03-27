@@ -8,8 +8,9 @@ Ha duas implementações.
 1) Depth-First Search - implementada pela Unit uTopoSort.pas
 2) Kahn - implementada pela Unit uTopoSortKahn.pas
 
-A implementação por DFS (uTopoSort.pas) utiliza recursão - o que pode acarretar em erros de Stack Overflow se o grafo conter uma quantidade de nós muito grande.
-<br><br>
+A implementação por DFS (uTopoSort.pas) utiliza recursão - o que pode acarretar em erros de Stack Overflow se o grafo conter uma quantidade de nós muito grande.  
+  
+  
 A implementação utilizando o algoritmo de Kahn (uTopoSortKahn.pas) não utiliza recursão e sim uma estrutura de dados de Fila (TQueue).
 
 O uso é muito simples. Imaginando um grafo como o abaixo:
