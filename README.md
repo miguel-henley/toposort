@@ -52,6 +52,9 @@ begin
   L := lTopo.Sort;   
     
   // **Obteremos como resultado a seguinte sequencia: 9, 10, 2, 8, 11, 3, 7, 5**
-
+  
+  .
+  .
+  .
   // lTopo.Free;
 ```
